@@ -1,0 +1,275 @@
+body {
+  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 75em) {
+
+    html {
+      font-size: 60%;
+    }
+  }
+  
+  /* 980px / 16px = 61.25em */
+  @media (max-width: 61.25em) {
+    html {
+      font-size: 58%;
+    }
+  }
+  
+  /* 460px / 16px = 28.75em */
+  @media (max-width: 28.75em) {
+    html {
+      font-size: 55%;
+    }
+  }
+
+
+
+html {
+    box-sizing: border-box;
+  
+    /* Set font size for easy rem calculations
+     * default document font size = 16px, 1rem = 16px, 100% = 16px
+     * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+    */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+  }
+
+br {
+  content: "";
+  margin: 2em;
+  display: block;
+}
+
+img {
+  max-width: 60em;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    padding-bottom: 1px;
+}
+
+  .navbar-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: medium;
+  }
+  
+    .navbar-li {
+    float: right;
+    padding-right: 40px;
+  }
+  
+    li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }  
+  
+    #title {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: left;
+    padding-left: 40px;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: solid; 
+    font-family: 'Philosopher', sans-serif;
+    size: 10px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .u-clearfix:before,
+  .u-clearfix:after {
+    content: " ";
+    display: table;
+  }
+  
+  .u-clearfix:after {
+    clear: both;
+  }
+  
+  .u-clearfix {
+    *zoom: 1;
+  }
+  
+  .subtle {
+    color: #aaa;
+  }
+  
+  .card-container {
+    margin: 25px auto 0;
+    position: relative;
+    width: 692px;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 0 5px rgba(75, 75, 75, .07);
+    z-index: 1;
+  }
+  
+  .card-body {
+    display: inline-block;
+    float: left;
+    width: 310px;
+  }
+  
+  .card-number {
+    margin-top: 15px;
+  }
+  
+  .card-circle {
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 22px;
+    font-size: 12px;
+    height: 25px;
+    text-align: center;
+    width: 25px;
+  }
+  
+  .card-author {
+    display: block;
+    font-size: 12px;
+    letter-spacing: .5px;
+    margin: 15px 0 0;
+    text-transform: uppercase;
+  }
+  
+  .card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 60px;
+    margin: 10px 0;
+  }
+  
+  .card-description {
+    display: inline-block;
+    font-weight: 300;
+    line-height: 22px;
+    margin: 10px 0;
+  }
+  
+  .card-read {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    margin: 5px 0 20px;
+    position: relative;
+    text-align: right;
+    text-transform: uppercase;
+  }
+  
+  .card-read:after {
+    background-color: #b8bddd;
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 9px;
+    width: 75%;
+  }
+  
+  .card-tag {
+    float: right;
+    margin: 5px 0 0;
+  }
+  
+  .card-media {
+    float: right;
+  }
+  
+  .card-shadow {
+    background-color: #fff;
+    box-shadow: 0 2px 25px 2px rgba(0, 0, 0, 1), 0 2px 50px 2px rgba(0, 0, 0, 1), 0 0 100px 3px rgba(0, 0, 0, .25);
+    height: 1px;
+    margin: -1px auto 0;
+    width: 80%;
+    z-index: -1;
+  }  
+
+.recipe {
+  background-color: #fff;
+  background-position: center;
+  border: 10px solid;
+  margin: auto;
+  width: 60%;
+  padding: 15px;
+  border-color: #fff;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  padding: 6em;
+}
+
+.recipe h1 {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Philosopher', sans-serif;
+  margin-bottom: 60px;
+}
+
+.recipe img {
+  max-width: 55em;
+  display: flex;
+  margin: auto;
+  display: block;
+  border-radius: 9px;
+}
+
+.recipe p {
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.recipe ul {
+  font-size: 15px;
+  line-height: 25px
+}
+
+.recipe ol {
+  font-size: 15px;
+  line-height: 20px
+}
+
+.recipe ol li {
+  margin-top: 15px;
+}
+
+.recipe h2 {
+  font-size: 17px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
